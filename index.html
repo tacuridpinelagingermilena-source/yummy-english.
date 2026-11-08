@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yummy English! | Learn Food Vocabulary</title>
+<style>
+:root{--red:#ef5b62;--orange:#ffad5a;--green:#6cae85;--cream:#fff8ed;--ink:#3e3834;--pink:#ffe5df}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+header{background:linear-gradient(135deg,#ffdfc4,#ffe9e4);padding:26px 6%;text-align:center}
+nav{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+nav a,.btn{background:#fff;color:var(--ink);padding:10px 16px;border-radius:24px;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+nav a:hover,.btn:hover{background:var(--red);color:white}
+.hero{max-width:900px;margin:auto;padding:25px 0 35px}
+.hero .emoji{font-size:clamp(3rem,9vw,6rem);letter-spacing:8px}
+h1{font-size:clamp(2.4rem,7vw,4.5rem);line-height:1.05;color:#d94c57;margin:12px 0}
+h2{color:#d94c57;font-size:2rem;margin-bottom:8px}
+.subtitle{font-size:1.2rem;font-weight:bold}
+section{padding:55px 6%;max-width:1200px;margin:auto}
+.intro{text-align:center;max-width:800px;margin:auto}
+.tag{display:inline-block;background:#e5f2e8;color:#37664a;padding:6px 14px;border-radius:20px;font-weight:bold}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-top:25px}
+.card{background:white;border-radius:20px;padding:20px;text-align:center;box-shadow:0 6px 18px #57422a12;border:2px solid #f8e9dc}
+.foodpic{height:115px;display:flex;align-items:center;justify-content:center;background:#fff4e8;border-radius:15px;font-size:4.6rem;margin-bottom:12px}
+.card h3{margin:5px 0;color:#d94c57;font-size:1.3rem}
+.card p{margin:4px 0}
+.example{font-size:.95rem;color:#655d57}
+button{font:inherit}
+.listen{margin-top:10px;background:#6cae85;color:white;border:0;border-radius:18px;padding:8px 14px;cursor:pointer}
+.listen:hover{background:#4c9167}
+.panel{background:white;border-radius:22px;padding:26px;box-shadow:0 6px 18px #57422a12}
+.quiz-question{padding:16px 0;border-bottom:1px solid #eee}
+.quiz-question p{font-weight:bold;margin:0 0 8px}
+label{display:block;margin:7px 0;cursor:pointer}
+.submit{background:var(--red);color:white;border:0;padding:12px 22px;border-radius:22px;font-weight:bold;cursor:pointer;margin-top:18px}
+#result{font-weight:bold;font-size:1.2rem;margin-top:16px}
+footer{text-align:center;background:#ffe5df;padding:35px 6%;margin-top:30px}
+.small{font-size:.9rem;color:#6d625b}
+@media(max-width:600px){section{padding:38px 5%}.hero{padding-top:10px}nav a{padding:8px 12px}}
+</style>
+</head>
+<body>
+<header id="home">
+<nav>
+<a href="#home">Home</a><a href="#vocabulary">Vocabulary</a><a href="#practice">Pronunciation</a><a href="#quiz">Quiz</a><a href="#credits">Credits</a>
+</nav>
+<div class="hero">
+<div class="emoji" aria-hidden="true">🍓 🍕 🥑 🍊</div>
+<p class="tag">A fun English learning corner</p>
+<h1>YUMMY ENGLISH!</h1>
+<p class="subtitle">Learn English with Food</p>
+<p><strong>Created by: Ginger Tacurid</strong></p>
+<p>Welcome! Are you ready to learn delicious new words? Explore food vocabulary, listen and repeat, and test what you know. Learning English can be fun and delicious!</p>
+<a class="btn" href="#vocabulary">LET'S START! 🍉</a>
+</div>
+</header>
+
+<section id="vocabulary">
+<div class="intro">
+<p class="tag">01 · Learn new words</p>
+<h2>Food Vocabulary 🍽️</h2>
+<p>Look at each picture, read the English word, and discover its meaning in Spanish. Try to say each word aloud!</p>
+</div>
+<div class="grid">
+<article class="card"><div class="foodpic" role="img" aria-label="Apple">🍎</div><h3>Apple</h3><p><strong>Manzana</strong></p><p class="example">I eat an apple every morning.</p><button class="listen" onclick="speak('Apple')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Banana">🍌</div><h3>Banana</h3><p><strong>Banana</strong></p><p class="example">Bananas are sweet and delicious.</p><button class="listen" onclick="speak('Banana')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Strawberry">🍓</div><h3>Strawberry</h3><p><strong>Fresa</strong></p><p class="example">I love eating strawberries.</p><button class="listen" onclick="speak('Strawberry')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Orange">🍊</div><h3>Orange</h3><p><strong>Naranja</strong></p><p class="example">Orange juice is delicious.</p><button class="listen" onclick="speak('Orange')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Watermelon">🍉</div><h3>Watermelon</h3><p><strong>Sandía</strong></p><p class="example">Watermelon is a refreshing fruit.</p><button class="listen" onclick="speak('Watermelon')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Hamburger">🍔</div><h3>Hamburger</h3><p><strong>Hamburguesa</strong></p><p class="example">My brother likes hamburgers.</p><button class="listen" onclick="speak('Hamburger')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Pizza">🍕</div><h3>Pizza</h3><p><strong>Pizza</strong></p><p class="example">We sometimes eat pizza together.</p><button class="listen" onclick="speak('Pizza')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Ice cream">🍦</div><h3>Ice cream</h3><p><strong>Helado</strong></p><p class="example">Chocolate ice cream is delicious.</p><button class="listen" onclick="speak('Ice cream')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Carrot">🥕</div><h3>Carrot</h3><p><strong>Zanahoria</strong></p><p class="example">Carrots are orange vegetables.</p><button class="listen" onclick="speak('Carrot')">🔊 Listen</button></article>
+<article class="card"><div class="foodpic" role="img" aria-label="Bread">🍞</div><h3>Bread</h3><p><strong>Pan</strong></p><p class="example">I usually eat bread for breakfast.</p><button class="listen" onclick="speak('Bread')">🔊 Listen</button></article>
+</div>
+</section>
+
+<section id="practice">
+<div class="intro">
+<p class="tag">02 · Listen and repeat</p><h2>Pronunciation Practice 🎧</h2>
+<p>Click the speaker button on each vocabulary card to hear the word in English. Listen carefully and repeat it aloud. (Audio uses your browser's built-in text-to-speech voice.)</p>
+</div>
+<div class="panel" style="text-align:center">
+<p><strong>Practice tip:</strong> Listen first, repeat slowly, and then say the word at a natural speed.</p>
+<button class="submit" onclick="speak('Apple. Banana. Strawberry. Orange. Watermelon. Hamburger. Pizza. Ice cream. Carrot. Bread.')">▶ Play all 10 words</button>
+</div>
+</section>
+
+<section id="quiz">
+<div class="intro"><p class="tag">03 · Check what you learned</p><h2>Food Quiz Time! 🎮</h2>
+<p>Choose one answer for each question, then click “Check my answers”.</p></div>
+<div class="panel">
+<form id="quizForm">
+<div class="quiz-question"><p>1. What is “Apple” in Spanish?</p><label><input type="radio" name="q1" value="a"> Orange</label><label><input type="radio" name="q1" value="b"> Manzana</label><label><input type="radio" name="q1" value="c"> Banana</label></div>
+<div class="quiz-question"><p>2. Which fruit is red and has small seeds?</p><label><input type="radio" name="q2" value="a"> Strawberry</label><label><input type="radio" name="q2" value="b"> Watermelon</label><label><input type="radio" name="q2" value="c"> Orange</label></div>
+<div class="quiz-question"><p>3. What is “Bread” in Spanish?</p><label><input type="radio" name="q3" value="a"> Cheese</label><label><input type="radio" name="q3" value="b"> Rice</label><label><input type="radio" name="q3" value="c"> Pan</label></div>
+<div class="quiz-question"><p>4. Which food is usually round and has cheese and tomato sauce?</p><label><input type="radio" name="q4" value="a"> Pizza</label><label><input type="radio" name="q4" value="b"> Carrot</label><label><input type="radio" name="q4" value="c"> Hamburger</label></div>
+<div class="quiz-question"><p>5. What is “Ice cream” in Spanish?</p><label><input type="radio" name="q5" value="a"> Helado</label><label><input type="radio" name="q5" value="b"> Cake</label><label><input type="radio" name="q5" value="c"> Bread</label></div>
+<div class="quiz-question"><p>6. Which fruit is usually yellow and long?</p><label><input type="radio" name="q6" value="a"> Orange</label><label><input type="radio" name="q6" value="b"> Banana</label><label><input type="radio" name="q6" value="c"> Strawberry</label></div>
+<div class="quiz-question"><p>7. What is “Carrot” in Spanish?</p><label><input type="radio" name="q7" value="a"> Zanahoria</label><label><input type="radio" name="q7" value="b"> Watermelon</label><label><input type="radio" name="q7" value="c"> Apple</label></div>
+<div class="quiz-question"><p>8. Which food is made with a bun and a patty?</p><label><input type="radio" name="q8" value="a"> Pizza</label><label><input type="radio" name="q8" value="b"> Hamburger</label><label><input type="radio" name="q8" value="c"> Bread</label></div>
+<div class="quiz-question"><p>9. What is “Watermelon” in Spanish?</p><label><input type="radio" name="q9" value="a"> Orange</label><label><input type="radio" name="q9" value="b"> Strawberry</label><label><input type="radio" name="q9" value="c"> Sandía</label></div>
+<div class="quiz-question"><p>10. Which fruit is commonly used to make orange juice?</p><label><input type="radio" name="q10" value="a"> Orange</label><label><input type="radio" name="q10" value="b"> Apple</label><label><input type="radio" name="q10" value="c"> Banana</label></div>
+<button class="submit" type="button" onclick="gradeQuiz()">CHECK MY ANSWERS ✨</button>
+</form>
+<div id="result" aria-live="polite"></div>
+</div>
+</section>
+
+<section>
+<div class="intro"><p class="tag">04 · Keep learning</p><h2>Why learn food vocabulary? 🥗</h2>
+<p>Food words are useful in everyday life. They help us talk about our favorite meals, order food at a restaurant, go shopping, and communicate with other people. Every new word is a new opportunity to learn!</p>
+<p><strong>Remember:</strong> Practice a little every day. You can do it!</p></div>
+</section>
+
+<footer id="credits">
+<h2>Thanks for visiting Yummy English! 💚</h2>
+<p>Created by Ginger Tacurid · English vocabulary learning project</p>
+<p class="small">Food illustrations: emoji characters used as visual learning icons. Audio: browser text-to-speech. Vocabulary examples written for this learning activity.</p>
+<p class="small">Eat, learn, and have fun! 🍓</p>
+</footer>
+
+<script>
+function speak(text){
+ if(!('speechSynthesis' in window)){alert('Your browser does not support text-to-speech.');return;}
+ window.speechSynthesis.cancel();
+ const utterance=new SpeechSynthesisUtterance(text);
+ utterance.lang='en-US'; utterance.rate=0.82;
+ window.speechSynthesis.speak(utterance);
+}
+function gradeQuiz(){
+ const answers={q1:'b',q2:'a',q3:'c',q4:'a',q5:'a',q6:'b',q7:'a',q8:'b',q9:'c',q10:'a'};
+ let score=0, unanswered=0;
+ for(const [q,a] of Object.entries(answers)){
+  const selected=document.querySelector('input[name="'+q+'"]:checked');
+  if(!selected) unanswered++;
+  else if(selected.value===a) score++;
+ }
+ const result=document.getElementById('result');
+ if(unanswered>0){result.textContent='Please answer all the questions. You still have '+unanswered+' unanswered.';return;}
+ let message=score===10?'Perfect score! Amazing work! 🎉':score>=7?'Great job! Keep practicing! 🌟':'Good effort! Review the vocabulary and try again! 💪';
+ result.textContent='Your score: '+score+'/10. '+message;
+}
+</script>
+</body>
+</html>
